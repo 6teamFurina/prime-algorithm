@@ -1,0 +1,6 @@
+'PrimeIndependent.primeSum_time' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrimeIndependent.primeCounting_time' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrimeIndependent.primeFinding_time' depends on axioms: [propext, Classical.choice, Quot.sound]
+PrimeIndependent.primeSum_time : PrimeIndependent.ExactPrimeSum
+PrimeIndependent.primeCounting_time : PrimeIndependent.ExactPrimeCounting
+PrimeIndependent.primeFinding_time : PrimeIndependent.ExactPrimeFinding

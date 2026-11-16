@@ -1,0 +1,815 @@
+warning: manifest out of date: source kind (git/path) of dependency 'mathlib' changed; use `lake update mathlib` to update it
+Building PrimeIndependent.Challenge
+warning: manifest out of date: source kind (git/path) of dependency 'mathlib' changed; use `lake update mathlib` to update it
+⚠ [2186/2186] Replayed PrimeIndependent.Challenge
+warning: formal/independent/PrimeIndependent/Challenge.lean:8:8: declaration uses `sorry`
+warning: formal/independent/PrimeIndependent/Challenge.lean:11:8: declaration uses `sorry`
+warning: formal/independent/PrimeIndependent/Challenge.lean:14:8: declaration uses `sorry`
+Build completed successfully (2186 jobs).
+Exporting #[Nat, String, String.mk, Char, Quot, Quot.mk, Quot.lift, Quot.ind, PrimeIndependent.primeSum_time, PrimeIndependent.primeCounting_time, PrimeIndependent.primeFinding_time, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from PrimeIndependent.Challenge
+Building PrimeIndependent.Solution
+warning: manifest out of date: source kind (git/path) of dependency 'mathlib' changed; use `lake update mathlib` to update it
+⚠ [8715/8812] Replayed EthFollowup.ModP.ClassForms
+warning: bridge/EthFollowup/ModP/ClassForms.lean:123:51: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/ClassForms.lean:131:51: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/ClassForms.lean:144:71: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/ClassForms.lean:155:51: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/ClassForms.lean:165:51: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/ClassForms.lean:182:71: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [8716/8812] Replayed EthFollowup.ModP.Lattice
+warning: bridge/EthFollowup/ModP/Lattice.lean:71:51: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/Lattice.lean:75:51: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/Lattice.lean:79:51: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/Lattice.lean:124:51: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/Lattice.lean:128:51: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/Lattice.lean:132:51: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/Lattice.lean:158:68: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/Lattice.lean:163:68: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/Lattice.lean:167:44: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/Lattice.lean:190:70: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/Lattice.lean:195:70: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/Lattice.lean:212:6: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/Lattice.lean:221:6: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/Lattice.lean:231:48: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/Lattice.lean:241:51: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/Lattice.lean:245:51: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/Lattice.lean:249:51: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [8718/8812] Replayed EthFollowup.ModP.QRCount
+warning: bridge/EthFollowup/ModP/QRCount.lean:230:51: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/QRCount.lean:236:51: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/QRCount.lean:243:51: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/QRCount.lean:281:38: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/QRCount.lean:286:38: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/QRCount.lean:293:38: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+warning: bridge/EthFollowup/ModP/QRCount.lean:357:38: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+⚠ [8719/8812] Replayed EthFollowup.ModP.ArithInstances
+warning: bridge/EthFollowup/ModP/ArithInstances.lean:185:32: This simp argument is unused:
+  List.mem_singleton
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hDesc1, hChains, forall_eq, List.cons_append, List.nil_append, List.mem_cons, List.not_mem_nil,
+    or_false, forall_eq_or_imp, Src.OK, hProds]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: bridge/EthFollowup/ModP/ArithInstances.lean:196:32: This simp argument is unused:
+  List.mem_singleton
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hDesc2, hChains, forall_eq, List.cons_append, List.nil_append, List.mem_cons, List.not_mem_nil,
+    or_false, forall_eq_or_imp, Src.OK, hProds]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: bridge/EthFollowup/ModP/ArithInstances.lean:366:44: This simp argument is unused:
+  IsEmpty.forall_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Desc.Sat, sqDescA, forall_lt_three, List.getD_cons_zero, List.getD_cons_succ, List.getD_nil,
+    patMatch_nil, and_true, List.mem_cons, List.not_mem_nil, or_false, forall_eq_or_imp, forall_eq, CmpRel.Holds,
+    Operand.eval, limbsVal_toLimbs hm, limbsVal_toLimbs ha, tri_0, tri_1, tri_2, sideVal, List.map_cons, List.map_nil,
+    List.sum_cons, List.sum_nil, Src.eval, ProdD.eval, List.getD_cons_zero, List.getD_cons_succ, one_mul, add_zero,
+    implies_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: bridge/EthFollowup/ModP/ArithInstances.lean:366:64: This simp argument is unused:
+  implies_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Desc.Sat, sqDescA, forall_lt_three, List.getD_cons_zero, List.getD_cons_succ, List.getD_nil,
+    patMatch_nil, and_true, List.mem_cons, List.not_mem_nil, or_false, forall_eq_or_imp, forall_eq, CmpRel.Holds,
+    Operand.eval, limbsVal_toLimbs hm, limbsVal_toLimbs ha, tri_0, tri_1, tri_2, sideVal, List.map_cons, List.map_nil,
+    List.sum_cons, List.sum_nil, Src.eval, ProdD.eval, List.getD_cons_zero, List.getD_cons_succ, one_mul, add_zero,
+    IsEmpty.forall_iff]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: bridge/EthFollowup/ModP/ArithInstances.lean:371:91: This simp argument is unused:
+  List.getD_nil
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Desc.Sat, sqDescB, forall_lt_three, List.getD_cons_zero, List.getD_cons_succ, patMatch_nil,
+    true_and, List.mem_cons, List.not_mem_nil, or_false, forall_eq_or_imp, forall_eq, CmpRel.Holds, Operand.eval,
+    limbsVal_toLimbs hp, tri_0, tri_1, tri_2, sideVal, List.map_cons, List.map_nil, List.sum_cons, List.sum_nil,
+    Src.eval, ProdD.eval, one_mul, add_zero, IsEmpty.forall_iff, implies_true, and_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: bridge/EthFollowup/ModP/ArithInstances.lean:375:23: This simp argument is unused:
+  IsEmpty.forall_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Desc.Sat, sqDescB, forall_lt_three, List.getD_cons_zero, List.getD_cons_succ, List.getD_nil,
+    patMatch_nil, true_and, List.mem_cons, List.not_mem_nil, or_false, forall_eq_or_imp, forall_eq, CmpRel.Holds,
+    Operand.eval, limbsVal_toLimbs hp, tri_0, tri_1, tri_2, sideVal, List.map_cons, List.map_nil, List.sum_cons,
+    List.sum_nil, Src.eval, ProdD.eval, one_mul, add_zero, implies_true, and_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: bridge/EthFollowup/ModP/ArithInstances.lean:375:43: This simp argument is unused:
+  implies_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Desc.Sat, sqDescB, forall_lt_three, List.getD_cons_zero, List.getD_cons_succ, List.getD_nil,
+    patMatch_nil, true_and, List.mem_cons, List.not_mem_nil, or_false, forall_eq_or_imp, forall_eq, CmpRel.Holds,
+    Operand.eval, limbsVal_toLimbs hp, tri_0, tri_1, tri_2, sideVal, List.map_cons, List.map_nil, List.sum_cons,
+    List.sum_nil, Src.eval, ProdD.eval, one_mul, add_zero, IsEmpty.forall_iff, and_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: bridge/EthFollowup/ModP/ArithInstances.lean:375:57: This simp argument is unused:
+  and_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Desc.Sat, sqDescB, forall_lt_three, List.getD_cons_zero, List.getD_cons_succ, List.getD_nil,
+    patMatch_nil, true_and, List.mem_cons, List.not_mem_nil, or_false, forall_eq_or_imp, forall_eq, CmpRel.Holds,
+    Operand.eval, limbsVal_toLimbs hp, tri_0, tri_1, tri_2, sideVal, List.map_cons, List.map_nil, List.sum_cons,
+    List.sum_nil, Src.eval, ProdD.eval, one_mul, add_zero, IsEmpty.forall_iff, implies_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8771/9223] Replayed PrimeAlgorithm.CauchyKernel
+warning: formal/unified/PrimeAlgorithm/CauchyKernel.lean:16:14: This simp argument is unused:
+  norm_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [node, Complex.norm_exp]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: formal/unified/PrimeAlgorithm/CauchyKernel.lean:48:6: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.div_re, Complex.div_im, Complex.add_re, Complex.sub_re, Complex.mul_re, Complex.ofReal_re,
+    Complex.I_re, Complex.I_im, Complex.add_im, Complex.sub_im, Complex.mul_im, Complex.ofReal_im, Complex.normSq_apply,
+    mul_zero, mul_one, zero_add, add_zero, sub_zero, zero_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: formal/unified/PrimeAlgorithm/CauchyKernel.lean:48:65: This simp argument is unused:
+  zero_sub
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.div_re, Complex.div_im, Complex.add_re, Complex.sub_re, Complex.mul_re, Complex.ofReal_re,
+    Complex.I_re, Complex.I_im, Complex.add_im, Complex.sub_im, Complex.mul_im, Complex.ofReal_im, Complex.normSq_apply,
+    zero_mul, mul_zero, mul_one, zero_add, add_zero, sub_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8772/9223] Replayed PrimeAlgorithm.CauchyQuadrature
+warning: formal/unified/PrimeAlgorithm/CauchyQuadrature.lean:119:5: Variable name `hH` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hH
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8775/9223] Replayed PrimeAlgorithm.CauchyAnalytic
+warning: formal/unified/PrimeAlgorithm/CauchyAnalytic.lean:49:8: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [8776/9223] Replayed PrimeAlgorithm.CauchyPrecision
+warning: formal/unified/PrimeAlgorithm/CauchyPrecision.lean:23:46: Variable name `hH` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hH
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: formal/unified/PrimeAlgorithm/CauchyPrecision.lean:53:31: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [8779/9223] Replayed PrimeAlgorithm.DyadicCauchy
+warning: formal/unified/PrimeAlgorithm/DyadicCauchy.lean:21:20: This simp argument is unused:
+  norm_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [sampleNode, sampleRoot_norm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8784/9223] Replayed PrimeAlgorithm.CertifiedNumerator
+warning: formal/unified/PrimeAlgorithm/CertifiedNumerator.lean:38:73: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [truncateComplex, embed, Complex.div_ofReal_re, Complex.div_ofReal_im, Complex.add_re,
+    Complex.add_im, Complex.mul_re, Complex.mul_im, Complex.intCast_re, Complex.intCast_im, Complex.I_re, Complex.I_im,
+    mul_zero, mul_one, zero_add, add_zero, sub_zero, signedQuotient_spec]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: formal/unified/PrimeAlgorithm/CertifiedNumerator.lean:42:83: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: formal/unified/PrimeAlgorithm/CertifiedNumerator.lean:42:83: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: formal/unified/PrimeAlgorithm/CertifiedNumerator.lean:94:8: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.sub_re, Complex.sub_im, Complex.ofReal_re, Complex.ofReal_im, Complex.mul_re,
+    Complex.mul_im, Complex.I_re, Complex.I_im, mul_zero, mul_one, zero_add, add_zero, sub_zero, zero_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: formal/unified/PrimeAlgorithm/CertifiedNumerator.lean:94:18: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.sub_re, Complex.sub_im, Complex.ofReal_re, Complex.ofReal_im, Complex.mul_re,
+    Complex.mul_im, Complex.I_re, Complex.I_im, mul_zero, mul_one, zero_mul, add_zero, sub_zero, zero_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8786/9223] Replayed PrimeAlgorithm.IntegerPrimeSum
+warning: formal/unified/PrimeAlgorithm/IntegerPrimeSum.lean:55:14: This simp argument is unused:
+  nsmul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [embed]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8787/9223] Replayed PrimeAlgorithm.KernelSumExpansion
+warning: formal/unified/PrimeAlgorithm/KernelSumExpansion.lean:97:7: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: formal/unified/PrimeAlgorithm/KernelSumExpansion.lean:100:8: This simp argument is unused:
+  Fintype.card_fun
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Fintype.card_prod, Nat.mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8802/9223] Replayed EthFollowup.CNFKit
+warning: bridge/EthFollowup/CNFKit.lean:24:0: automatically included section variable(s) unused in theorem `EthFollowup.Clause.eval_iff`:
+  [DecidableEq α]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq α] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: bridge/EthFollowup/CNFKit.lean:28:0: automatically included section variable(s) unused in theorem `EthFollowup.CNF.eval_iff`:
+  [DecidableEq α]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq α] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: bridge/EthFollowup/CNFKit.lean:145:0: automatically included section variable(s) unused in theorem `EthFollowup.CNF.relabel_width`:
+  [DecidableEq α]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq α] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8803/9223] Replayed EthFollowup.HamiltonianParity
+warning: bridge/EthFollowup/HamiltonianParity.lean:300:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: bridge/EthFollowup/HamiltonianParity.lean:310:16: This simp argument is unused:
+  SimpleGraph.Reachable.refl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [flip] at this
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8997/9223] Replayed EthFollowup.ModP.SignedCarry
+warning: bridge/EthFollowup/ModP/SignedCarry.lean:174:39: Unused tactic linter: `push_cast` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9002/9223] Replayed EthFollowup.Primes.ArithLParams
+warning: bridge/EthFollowup/Primes/ArithLParams.lean:648:23: This simp argument is unused:
+  decide_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hc, Bool.not_true, Bool.false_or, hR, hO]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: bridge/EthFollowup/Primes/ArithLParams.lean:648:36: This simp argument is unused:
+  Bool.not_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hc, decide_true, Bool.false_or, hR, hO]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: bridge/EthFollowup/Primes/ArithLParams.lean:648:51: This simp argument is unused:
+  Bool.false_or
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hc, decide_true, Bool.not_true, hR, hO]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: bridge/EthFollowup/Primes/ArithLParams.lean:722:88: This simp argument is unused:
+  and_imp
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [aChk, cellOK, Bool.and_eq_true, List.all_eq_true, List.mem_range, Bool.or_eq_true,
+    Bool.not_eq_true', decide_eq_false_iff_not, decide_eq_true_eq, beq_iff_eq, not_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9018/9223] Replayed EthFollowup.Primes.FourKernelCompiler
+warning: bridge/EthFollowup/Primes/FourKernelCompiler.lean:69:4: This simp argument is unused:
+  Term.coeff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [compiledChain, sideVal, List.map_cons, List.map_nil, List.sum_cons, List.sum_nil, Src.eval,
+    one_mul, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: bridge/EthFollowup/Primes/FourKernelCompiler.lean:86:23: This simp argument is unused:
+  true_implies
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [compile, Desc.Sat, patMatch, List.getD_nil, List.length_nil, Nat.not_lt_zero, IsEmpty.forall_iff,
+    List.mem_ofFn, forall_exists_index, forall_eq_apply_imp_iff, compiledChain_holds]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: bridge/EthFollowup/Primes/FourKernelCompiler.lean:86:70: This simp argument is unused:
+  forall_eq_apply_imp_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [compile, Desc.Sat, patMatch, List.getD_nil, List.length_nil, Nat.not_lt_zero, IsEmpty.forall_iff,
+    true_implies, List.mem_ofFn, forall_exists_index, compiledChain_holds]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: bridge/EthFollowup/Primes/FourKernelCompiler.lean:87:4: This simp argument is unused:
+  compiledChain_holds
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [compile, Desc.Sat, patMatch, List.getD_nil, List.length_nil, Nat.not_lt_zero, IsEmpty.forall_iff,
+    true_implies, List.mem_ofFn, forall_exists_index, forall_eq_apply_imp_iff]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: bridge/EthFollowup/Primes/FourKernelCompiler.lean:123:64: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [9020/9223] Replayed EthFollowup.Primes.FourKernelCount
+warning: bridge/EthFollowup/Primes/FourKernelCount.lean:155:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [9024/9223] Replayed PrimeAlgorithm.IntegerKernelExpansion
+warning: formal/unified/PrimeAlgorithm/IntegerKernelExpansion.lean:31:76: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: formal/unified/PrimeAlgorithm/IntegerKernelExpansion.lean:50:29: This simp argument is unused:
+  Bool.coe_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [h, decide_true, ite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: formal/unified/PrimeAlgorithm/IntegerKernelExpansion.lean:95:35: This simp argument is unused:
+  Bool.coe_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [gaussian, componentSign, Fintype.sum_bool, componentQuotient, Bool.false_eq_true, ite_false,
+    ite_true, Zsqrtd.re_add, Zsqrtd.re_mul, Zsqrtd.re_intCast, Zsqrtd.im_intCast, Zsqrtd.re_natCast, Zsqrtd.im_natCast,
+    mul_zero, mul_one, zero_mul, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: formal/unified/PrimeAlgorithm/IntegerKernelExpansion.lean:96:34: This simp argument is unused:
+  Zsqrtd.re_intCast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [gaussian, componentSign, Fintype.sum_bool, componentQuotient, Bool.false_eq_true, ite_false,
+    Bool.coe_true, ite_true, Zsqrtd.re_add, Zsqrtd.re_mul, Zsqrtd.im_intCast, Zsqrtd.re_natCast, Zsqrtd.im_natCast,
+    mul_zero, mul_one, zero_mul, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: formal/unified/PrimeAlgorithm/IntegerKernelExpansion.lean:96:52: This simp argument is unused:
+  Zsqrtd.im_intCast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [gaussian, componentSign, Fintype.sum_bool, componentQuotient, Bool.false_eq_true, ite_false,
+    Bool.coe_true, ite_true, Zsqrtd.re_add, Zsqrtd.re_mul, Zsqrtd.re_intCast, Zsqrtd.re_natCast, Zsqrtd.im_natCast,
+    mul_zero, mul_one, zero_mul, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: formal/unified/PrimeAlgorithm/IntegerKernelExpansion.lean:97:51: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [gaussian, componentSign, Fintype.sum_bool, componentQuotient, Bool.false_eq_true, ite_false,
+    Bool.coe_true, ite_true, Zsqrtd.re_add, Zsqrtd.re_mul, Zsqrtd.re_intCast, Zsqrtd.im_intCast, Zsqrtd.re_natCast,
+    Zsqrtd.im_natCast, mul_zero, zero_mul, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: formal/unified/PrimeAlgorithm/IntegerKernelExpansion.lean:98:30: This simp argument is unused:
+  Bool.decide_coe
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [horizontalSign, hneg, EthFollowup.Primes.PhaseKernel.quotient,
+    EthFollowup.Primes.PhaseKernel.numerator, Bool.false_eq_true, ite_false, denominator_eq p z num den hz,
+    horizontal_natAbs p z num den hz]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: formal/unified/PrimeAlgorithm/IntegerKernelExpansion.lean:103:35: This simp argument is unused:
+  Bool.coe_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [gaussian, componentSign, Fintype.sum_bool, componentQuotient, Bool.false_eq_true, ite_false,
+    ite_true, Zsqrtd.im_add, Zsqrtd.im_mul, Zsqrtd.re_intCast, Zsqrtd.im_intCast, Zsqrtd.re_natCast, Zsqrtd.im_natCast,
+    mul_zero, mul_one, zero_mul, zero_add, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: formal/unified/PrimeAlgorithm/IntegerKernelExpansion.lean:104:34: This simp argument is unused:
+  Zsqrtd.re_intCast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [gaussian, componentSign, Fintype.sum_bool, componentQuotient, Bool.false_eq_true, ite_false,
+    Bool.coe_true, ite_true, Zsqrtd.im_add, Zsqrtd.im_mul, Zsqrtd.im_intCast, Zsqrtd.re_natCast, Zsqrtd.im_natCast,
+    mul_zero, mul_one, zero_mul, zero_add, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: formal/unified/PrimeAlgorithm/IntegerKernelExpansion.lean:104:52: This simp argument is unused:
+  Zsqrtd.im_intCast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [gaussian, componentSign, Fintype.sum_bool, componentQuotient, Bool.false_eq_true, ite_false,
+    Bool.coe_true, ite_true, Zsqrtd.im_add, Zsqrtd.im_mul, Zsqrtd.re_intCast, Zsqrtd.re_natCast, Zsqrtd.im_natCast,
+    mul_zero, mul_one, zero_mul, zero_add, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: formal/unified/PrimeAlgorithm/IntegerKernelExpansion.lean:105:51: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [gaussian, componentSign, Fintype.sum_bool, componentQuotient, Bool.false_eq_true, ite_false,
+    Bool.coe_true, ite_true, Zsqrtd.im_add, Zsqrtd.im_mul, Zsqrtd.re_intCast, Zsqrtd.im_intCast, Zsqrtd.re_natCast,
+    Zsqrtd.im_natCast, mul_zero, zero_mul, zero_add, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: formal/unified/PrimeAlgorithm/IntegerKernelExpansion.lean:105:59: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [gaussian, componentSign, Fintype.sum_bool, componentQuotient, Bool.false_eq_true, ite_false,
+    Bool.coe_true, ite_true, Zsqrtd.im_add, Zsqrtd.im_mul, Zsqrtd.re_intCast, Zsqrtd.im_intCast, Zsqrtd.re_natCast,
+    Zsqrtd.im_natCast, mul_zero, mul_one, zero_add, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: formal/unified/PrimeAlgorithm/IntegerKernelExpansion.lean:105:77: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [gaussian, componentSign, Fintype.sum_bool, componentQuotient, Bool.false_eq_true, ite_false,
+    Bool.coe_true, ite_true, Zsqrtd.im_add, Zsqrtd.im_mul, Zsqrtd.re_intCast, Zsqrtd.im_intCast, Zsqrtd.re_natCast,
+    Zsqrtd.im_natCast, mul_zero, mul_one, zero_mul, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: formal/unified/PrimeAlgorithm/IntegerKernelExpansion.lean:106:96: This simp argument is unused:
+  Bool.coe_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [EthFollowup.Primes.PhaseKernel.quotient, EthFollowup.Primes.PhaseKernel.numerator, ite_true,
+    denominator_eq p z num den hz, Int.natAbs_neg]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9025/9223] Replayed PrimeAlgorithm.CertifiedCoordinateBounds
+warning: formal/unified/PrimeAlgorithm/CertifiedCoordinateBounds.lean:24:14: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.div_ofReal_im, Complex.add_im, Complex.mul_im, Complex.intCast_re, Complex.intCast_im,
+    Complex.I_re, Complex.I_im, mul_zero, mul_one, zero_add, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ℹ [9026/9223] Replayed PrimeAlgorithm.PrimeQueryExpansion
+info: formal/unified/PrimeAlgorithm/PrimeQueryExpansion.lean:238:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [9032/9223] Replayed EthFollowup.Factoring.MulPackage
+warning: bridge/EthFollowup/Factoring/MulPackage.lean:32:63: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: bridge/EthFollowup/Factoring/MulPackage.lean:33:67: Unused tactic linter: `omega` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: bridge/EthFollowup/Factoring/MulPackage.lean:33:67: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: bridge/EthFollowup/Factoring/MulPackage.lean:34:58: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: bridge/EthFollowup/Factoring/MulPackage.lean:107:8: Variable name `x` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _x
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: bridge/EthFollowup/Factoring/MulPackage.lean:112:36: Variable name `x` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _x
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9033/9223] Replayed EthFollowup.ModP.ArithPoly
+warning: bridge/EthFollowup/ModP/ArithPoly.lean:111:43: Variable name `x` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _x
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: bridge/EthFollowup/ModP/ArithPoly.lean:125:73: Variable name `x` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _x
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9669/9717] Replayed EthFollowup.ExactHC.Theorem2
+warning: bridge/EthFollowup/ExactHC/Theorem2.lean:134:12: This simp argument is unused:
+  List.filter_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [this]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: bridge/EthFollowup/ExactHC/Theorem2.lean:139:12: This simp argument is unused:
+  List.filter_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [this]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: bridge/EthFollowup/ExactHC/Theorem2.lean:568:5: Variable name `ha` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ha
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9687/9717] Replayed EthFollowup.ModP.HornerCount
+warning: bridge/EthFollowup/ModP/HornerCount.lean:91:16: `Polynomial.eval_finset_sum` has been deprecated: Use `Polynomial.eval_finsetSum` instead
+warning: bridge/EthFollowup/ModP/HornerCount.lean:106:10: `List.take_succ` has been deprecated: Use `List.take_add_one` instead
+warning: bridge/EthFollowup/ModP/HornerCount.lean:114:10: `List.take_succ` has been deprecated: Use `List.take_add_one` instead
+warning: bridge/EthFollowup/ModP/HornerCount.lean:238:26: `Polynomial.finset_sum_coeff` has been deprecated: Use `Polynomial.finsetSum_coeff` instead
+⚠ [9695/9717] Replayed PrimeAlgorithm.CertifiedRawGaussian
+warning: formal/unified/PrimeAlgorithm/CertifiedRawGaussian.lean:75:41: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: formal/unified/PrimeAlgorithm/CertifiedRawGaussian.lean:75:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: formal/unified/PrimeAlgorithm/CertifiedRawGaussian.lean:75:41: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: formal/unified/PrimeAlgorithm/CertifiedRawGaussian.lean:82:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: formal/unified/PrimeAlgorithm/CertifiedRawGaussian.lean:82:37: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: formal/unified/PrimeAlgorithm/CertifiedRawGaussian.lean:101:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: formal/unified/PrimeAlgorithm/CertifiedRawGaussian.lean:101:78: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9697/9717] Replayed PrimeAlgorithm.CertifiedRawTaylor
+warning: formal/unified/PrimeAlgorithm/CertifiedRawTaylor.lean:90:59: Variable name `x` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _x
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9698/9717] Replayed PrimeAlgorithm.CertifiedAnalyticBounds
+warning: formal/unified/PrimeAlgorithm/CertifiedAnalyticBounds.lean:70:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: formal/unified/PrimeAlgorithm/CertifiedAnalyticBounds.lean:70:36: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: formal/unified/PrimeAlgorithm/CertifiedAnalyticBounds.lean:70:48: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9700/9717] Replayed PrimeAlgorithm.PrimeWitnessReindex
+warning: formal/unified/PrimeAlgorithm/PrimeWitnessReindex.lean:84:29: This simp argument is unused:
+  Bool.true_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [binBranch] at hunit
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9701/9717] Replayed PrimeAlgorithm.IntegerPrimeQueryFinal
+warning: formal/unified/PrimeAlgorithm/IntegerPrimeQueryFinal.lean:34:4: This simp argument is unused:
+  KernelSumExpansion.query_count
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [QueryIndex, Fintype.card_prod, Fintype.card_fin, Fintype.card_bool, KernelSumExpansion.sign_count,
+    NodeChoices, Fintype.card_fun, NodeChoice, KernelSumExpansion.queryBound]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: formal/unified/PrimeAlgorithm/IntegerPrimeQueryFinal.lean:34:35: This simp argument is unused:
+  KernelSumExpansion.sign_count
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [QueryIndex, Fintype.card_prod, Fintype.card_fin, Fintype.card_bool, KernelSumExpansion.query_count,
+    NodeChoices, Fintype.card_fun, NodeChoice, KernelSumExpansion.queryBound]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9705/9743] Replayed EthFollowup.Primes.FourKernelQuery
+warning: bridge/EthFollowup/Primes/FourKernelQuery.lean:19:54: This simp argument is unused:
+  List.map_nil
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [blockLen, List.map_cons, List.foldr_cons, List.foldr_nil, List.flatten_cons,
+    List.length_append] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: bridge/EthFollowup/Primes/FourKernelQuery.lean:19:67: This simp argument is unused:
+  List.foldr_nil
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [blockLen, List.map_cons, List.foldr_cons, List.map_nil, List.flatten_cons, List.length_append] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9706/9743] Replayed PrimeAlgorithm.PrimeQueryBounds
+warning: formal/unified/PrimeAlgorithm/PrimeQueryBounds.lean:68:44: This simp argument is unused:
+  List.forall_mem_nil
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [queryData, List.forall_mem_cons]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9708/9743] Replayed PrimeAlgorithm.CertifiedNearest
+warning: formal/unified/PrimeAlgorithm/CertifiedNearest.lean:64:44: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.sub_im, Complex.div_ofReal_im, Complex.div_natCast_im, Complex.add_im, Complex.mul_im,
+    Complex.intCast_re, Complex.intCast_im, Complex.I_re, Complex.I_im, mul_zero, mul_one, add_zero, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9710/9743] Replayed PrimeAlgorithm.CertifiedGeneratorBudget
+warning: formal/unified/PrimeAlgorithm/CertifiedGeneratorBudget.lean:21:26: This simp argument is unused:
+  div_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [eta, order, pow_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9711/9743] Replayed PrimeAlgorithm.CertifiedGeneratorAccuracy
+warning: formal/unified/PrimeAlgorithm/CertifiedGeneratorAccuracy.lean:11:12: Ambiguous namespace `Cauchy`: it is interpreted as `_root_.PrimeAlgorithm.Cauchy` because this `open` occurs inside `namespace PrimeAlgorithm.CertifiedGenerator`, while `_root_.Cauchy` is silently not opened. Specify the namespace unambiguously, e.g. `_root_.PrimeAlgorithm.Cauchy`. The warning can sometimes also be addressed by moving the `open` outside of the surrounding `namespace`.
+
+Note: This linter can be disabled with `set_option linter.ambiguousOpen false`
+warning: formal/unified/PrimeAlgorithm/CertifiedGeneratorAccuracy.lean:110:64: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: formal/unified/PrimeAlgorithm/CertifiedGeneratorAccuracy.lean:147:74: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [9715/9743] Replayed PrimeAlgorithm.PrimeQueryEnumeration
+warning: formal/unified/PrimeAlgorithm/PrimeQueryEnumeration.lean:46:17: This simp argument is unused:
+  List.mem_product
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [quadList, Fin.forall_fin_succ, quadGet]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: formal/unified/PrimeAlgorithm/PrimeQueryEnumeration.lean:67:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: formal/unified/PrimeAlgorithm/PrimeQueryEnumeration.lean:279:50: Variable name `hN` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hN
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9716/9743] Replayed EthFollowup.ModP.BatchCollect
+warning: bridge/EthFollowup/ModP/BatchCollect.lean:48:33: This simp argument is unused:
+  Int.toNat_natCast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [counts, List.range_succ, List.map_append, List.map_cons, List.map_nil]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: bridge/EthFollowup/ModP/BatchCollect.lean:62:10: This simp argument is unused:
+  List.getD_eq_getElem (items w) ([], 0) hj
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9720/9743] Replayed EthFollowup.Primes.CountKernelCompiler
+warning: bridge/EthFollowup/Primes/CountKernelCompiler.lean:69:4: This simp argument is unused:
+  Term.coeff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [compiledChain, sideVal, List.map_cons, List.map_nil, List.sum_cons, List.sum_nil, Src.eval,
+    one_mul, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: bridge/EthFollowup/Primes/CountKernelCompiler.lean:86:23: This simp argument is unused:
+  true_implies
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [compile, Desc.Sat, patMatch, List.getD_nil, List.length_nil, Nat.not_lt_zero, IsEmpty.forall_iff,
+    List.mem_ofFn, forall_exists_index, forall_eq_apply_imp_iff, compiledChain_holds]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: bridge/EthFollowup/Primes/CountKernelCompiler.lean:86:70: This simp argument is unused:
+  forall_eq_apply_imp_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [compile, Desc.Sat, patMatch, List.getD_nil, List.length_nil, Nat.not_lt_zero, IsEmpty.forall_iff,
+    true_implies, List.mem_ofFn, forall_exists_index, compiledChain_holds]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: bridge/EthFollowup/Primes/CountKernelCompiler.lean:87:4: This simp argument is unused:
+  compiledChain_holds
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [compile, Desc.Sat, patMatch, List.getD_nil, List.length_nil, Nat.not_lt_zero, IsEmpty.forall_iff,
+    true_implies, List.mem_ofFn, forall_exists_index, forall_eq_apply_imp_iff]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: bridge/EthFollowup/Primes/CountKernelCompiler.lean:123:64: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [9722/9743] Replayed EthFollowup.Primes.CountKernelCount
+warning: bridge/EthFollowup/Primes/CountKernelCount.lean:155:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+ℹ [9726/9743] Replayed PrimeAlgorithm.CountQueryExpansion
+info: formal/unified/PrimeAlgorithm/CountQueryExpansion.lean:244:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [9732/9743] Replayed EthFollowup.Primes.CountKernelQuery
+warning: bridge/EthFollowup/Primes/CountKernelQuery.lean:19:54: This simp argument is unused:
+  List.map_nil
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [blockLen, List.map_cons, List.foldr_cons, List.foldr_nil, List.flatten_cons,
+    List.length_append] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: bridge/EthFollowup/Primes/CountKernelQuery.lean:19:67: This simp argument is unused:
+  List.foldr_nil
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [blockLen, List.map_cons, List.foldr_cons, List.map_nil, List.flatten_cons, List.length_append] at *
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9733/9743] Replayed PrimeAlgorithm.CountQueryBounds
+warning: formal/unified/PrimeAlgorithm/CountQueryBounds.lean:68:44: This simp argument is unused:
+  List.forall_mem_nil
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [queryData, List.forall_mem_cons]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9735/9743] Replayed PrimeAlgorithm.CountQueryEnumeration
+warning: formal/unified/PrimeAlgorithm/CountQueryEnumeration.lean:46:17: This simp argument is unused:
+  List.mem_product
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [quadList, Fin.forall_fin_succ, quadGet]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: formal/unified/PrimeAlgorithm/CountQueryEnumeration.lean:67:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: formal/unified/PrimeAlgorithm/CountQueryEnumeration.lean:279:50: Variable name `hN` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hN
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9739/9743] Replayed PrimeAlgorithm.PrimeFinding
+warning: formal/unified/PrimeAlgorithm/PrimeFinding.lean:95:27: This simp argument is unused:
+  Prod.fst
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Prod.snd]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: formal/unified/PrimeAlgorithm/PrimeFinding.lean:95:36: This simp argument is unused:
+  Prod.snd
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Prod.fst]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9740/9743] Replayed PrimeAlgorithm.AdaptiveWordQueries
+warning: formal/unified/PrimeAlgorithm/AdaptiveWordQueries.lean:54:0: automatically included section variable(s) unused in theorem `PrimeAlgorithm.AdaptiveWordQuery.body_runs`:
+  [Enc γ]
+  [Carried γ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Enc γ] [Carried γ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: formal/unified/PrimeAlgorithm/AdaptiveWordQueries.lean:82:0: automatically included section variable(s) unused in theorem `PrimeAlgorithm.AdaptiveWordQuery.machine_runs_uniform`:
+  [Enc γ]
+  [Carried γ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Enc γ] [Carried γ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9742/9743] Replayed PrimeAlgorithm.PrimeFindingMachine
+warning: formal/unified/PrimeAlgorithm/PrimeFindingMachine.lean:85:23: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [request]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (9743 jobs).
+Exporting #[Nat, String, String.mk, Char, Quot, Quot.mk, Quot.lift, Quot.ind, PrimeIndependent.primeSum_time, PrimeIndependent.primeCounting_time, PrimeIndependent.primeFinding_time, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from PrimeIndependent.Solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!

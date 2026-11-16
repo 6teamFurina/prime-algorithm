@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+"""Invoke the release's pinned Lake without depending on local elan proxy links."""
+import os
+import sys
+from release_common import TOOLCHAIN, environment
+
+binary = TOOLCHAIN / 'bin/lake'
+if not binary.is_file():
+    raise SystemExit('Run python3 scripts/bootstrap.py first.')
+os.execve(str(binary), [str(binary), *sys.argv[1:]], environment())
+

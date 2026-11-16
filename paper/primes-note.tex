@@ -1,0 +1,371 @@
+\documentclass[11pt]{amsart}
+\usepackage[margin=1.15in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\e}{\mathrm{e}}
+\newcommand{\lean}[1]{\texttt{#1}}
+\DeclareMathOperator{\re}{Re}
+
+\title[Prime sums, prime counting and prime finding in time $N^{o(1)}$]%
+{Exact prime sums, exact prime counting and deterministic prime finding
+in time $N^{o(1)}$, relative to the new counting engines}
+
+\author{Jiayan Ni}
+\address{Cornell University, Ithaca, NY 14853, United States}
+\email{jn577@cornell.edu}
+\date{November 15, 2026. Announcement; a full paper is in preparation.}
+
+\begin{document}
+
+\begin{abstract}
+We announce three machine-checked theorems.  There are deterministic Turing
+machines that, on input $N$ in binary, output (i)~the exact sum
+$S(N)=\sum_{p\le N}p$ of the primes up to $N$, (ii)~the exact prime count
+$\pi(N)$, and (iii)~for $N\ge1$ a prime $p$ with $N<p\le 2N$, each within
+$2^{O(b/\sqrt{\log b})}=N^{o(1)}$ steps, where $b$ is the bit length of $N$.
+The best previous bounds for all three problems were of the form
+$N^{1/2+o(1)}$.  The proofs are reductions to the subexponential counting
+algorithm behind the recent refutation of the Exponential Time Hypothesis:
+they are not classical algorithms, they are purely asymptotic, and they stand
+or fall with that result.  The new ingredient is an analytic one: Ramanujan
+sums express the M\"obius function without factoring, and a Cauchy-kernel
+quadrature turns the phases, the logarithm and its reciprocal into short
+linear combinations of rational functions that a counting network of linear
+size can evaluate.  All three statements are formalized in Lean~4 against a
+specification file that imports only Mathlib.
+\end{abstract}
+
+\maketitle
+
+\section{Results}
+
+For a natural number $N$ let $b(N)$ be the length of its binary expansion
+(so $b(0)=0$), and for a natural number $C$ put
+\[
+  T_C(N)=\Bigl\lfloor C\cdot 2^{\,C\,b(N)/\sqrt{\log_2(b(N)+2)}}\Bigr\rfloor .
+\]
+Numbers are written in binary, least significant bit first, and $0$ is the
+empty word.  ``Machine'' means a deterministic multi-stack Turing machine
+with finite stack alphabets, in the sense of Mathlib's \lean{TM2} model with
+its timed halting relation \lean{TM2OutputsInTime}; the step count includes
+everything the machine does.
+
+\begin{theorem}[Exact prime sum]\label{thm:sum}
+There are a machine $M$ and a constant $C$ such that for every $N\in\N$, on
+input $N$ the machine $M$ halts within $T_C(N)$ steps with output
+$S(N)=\sum_{p\le N,\ p\ \mathrm{prime}}p$.
+\end{theorem}
+
+\begin{theorem}[Exact prime counting]\label{thm:count}
+There are a machine $M$ and a constant $C$ such that for every $N\in\N$, on
+input $N$ the machine $M$ halts within $T_C(N)$ steps with output $\pi(N)$.
+\end{theorem}
+
+\begin{theorem}[Deterministic prime finding]\label{thm:find}
+There are a machine $M$ and a constant $C$ such that for every $N\in\N$, on
+input $N$ the machine $M$ halts within $T_C(N)$ steps and outputs a prime $p$
+with $N<p\le 2\max(N,1)$.
+\end{theorem}
+
+In each theorem one machine and one constant serve all inputs, including
+$N=0$ and $N=1$; the three theorems may use different machines and constants.
+Since $b(N)=\lfloor\log_2 N\rfloor+1$ for $N\ge1$, the bound is
+$2^{O(\log N/\sqrt{\log\log N})}=N^{o(1)}$.
+
+\subsection*{Context}
+The analytic method of Lagarias and Odlyzko \cite{LO} computes $\pi(N)$ in
+time $N^{1/2+o(1)}$, and the elementary method of Hirsch, Kessler and
+Mendlovic \cite{HKM} gives $\widetilde O(\sqrt N)$ for both $\pi(N)$ and
+$S(N)$; the combinatorial methods \cite{LMO,DR} run in time about $N^{2/3}$.
+For deterministically finding a prime larger than $N$ the best known bound is
+also $N^{1/2+o(1)}$, and improving it was the goal of the Polymath4 project
+\cite{TCH}.  We know of no earlier bound of the form $N^{o(1)}$ for any of
+the three problems, conditional or not.
+
+In October 2026 two deterministic algorithms for \#3-SAT in time $2^{o(n)}$
+were announced, with Lean formalizations \cite{O,A}; we use the one of
+\cite{A}.
+Several consequences for number-theoretic problems followed quickly, among
+them deterministic factoring in time $N^{o(1)}$ \cite{RR} and, closest to the
+present note, Tulsyan's computation of the \emph{parity} of $\pi(N)$ in time
+$N^{o(1)}$ \cite{T1}.  The notes accompanying \cite{T1} record exact
+$\pi(N)$ and deterministic prime finding as out of reach of that approach
+without a further, analytic component (see also \cite{T2}).
+Theorems~\ref{thm:sum}--\ref{thm:find} supply such a component.  We searched
+the Hexagon server, arXiv and the public repositories of \cite{A,T1} on
+November~15, 2026 and found no overlapping claim.
+
+\subsection*{What kind of result this is}
+The theorems are consequences of the counting algorithm of \cite{A}.  They
+contain no unproved hypothesis in the formal sense: the Lean development of
+\cite{A} is imported and checked together with ours.  But the speed comes
+entirely from that algorithm, and if it were withdrawn the results would go
+with it.  The constant $C$ is not extracted.  The constants that arise in
+the proof are very large (the reduction alone introduces a network constant
+$2^{22}\cdot132$ and a padding factor $2049$), and we make no claim about
+any feasible range of $N$.  Nothing here is a practical algorithm.
+
+\section{The engine}
+
+We use the following consequence of \cite{A}, in the packaged form developed
+in \cite{T1} and extended here to batches of queries.
+
+A \emph{counting package} is a uniform family of systems of constraints over
+bounded natural-number variables.  For an input word $w$ of length $n$ and a
+query word $\pi$ of length at most $n$, the system has $O(n)$ shared bits in
+total and is built from additions, comparisons, copies and a bounded number
+of multiplications; it is produced from $(w,\pi)$ in polynomial time.  The
+quantity of interest is its number of solutions $Q(w,\pi)$.
+
+\begin{proposition}[Batch counting]\label{prop:engine}
+Let a counting package be given, together with polynomial-time procedures
+that produce polynomially many queries $\pi_1,\pi_2,\dots$ (possibly
+adaptively, each depending on earlier answers) and compute an output from
+$w$ and the answers $Q(w,\pi_i)$.  Then one machine computes that output in
+time $2^{O(n/\sqrt{\log n})}$.  The same holds when $w$ is first replaced by
+a padded word of length $O(n)$ that is computable in polynomial time.
+\end{proposition}
+
+The essential point is that the exponent is governed by the number of shared
+bits of a \emph{single} system, which must be linear in $n$, while the number
+of queries and all pre- and post-processing may be polynomial.
+In Lean this is \lean{NatBatchQuery.machine\_TM\_linear\_input}, proved from
+\lean{CountedRoute.onTheCountedRecursion} of \cite{A}.
+
+\section{Sketch of the reduction}
+
+\subsection{A formula without factoring}
+Write $\e(t)=\exp(2\pi i t)$.  For $n\ge2$,
+\[
+  \mathbf 1_{\mathrm{prime}}(n)=-\frac{\mu(n)\Lambda(n)}{\log n},
+\]
+since $\mu(n)\Lambda(n)$ is $-\log n$ at primes and vanishes elsewhere.
+With $\Lambda(n)=\sum_{dm=n}\mu(d)\log m$ and Ramanujan's evaluation
+\cite{R} of $c_d(1)$,
+\[
+  \mu(d)=\sum_{\substack{0\le x<d\\ \gcd(x,d)=1}}\e(x/d),
+\]
+we obtain
+\begin{equation}\label{eq:four}
+  S(N)=-\sum_{\substack{dm=n\\ 2\le n\le N}}\;
+  \sum_{\substack{0\le x<d,\ 0\le x'<n\\ (x,d)=(x',n)=1}}
+  n\cdot\e\!\Bigl(\frac{x'}{n}\Bigr)\cdot\frac{1}{\log n}\cdot
+  \e\!\Bigl(\frac{x}{d}\Bigr)\cdot\log m .
+\end{equation}
+Each summand is $n$ times a product of four values of analytic functions at
+rational points with denominators $n$, $d$ or a power of two.  No factor
+requires knowing the factorization of $n$.  Coprimality is expressed by a
+unique bounded B\'ezout witness: for $d\ge2$ and $1\le x<d$ one has
+$\gcd(x,d)=1$ if and only if there is exactly one pair $(u,v)$ with
+$0\le u<d$, $0\le v<x$ and $xu=1+dv$.
+
+\subsection{Cauchy kernels}
+Let $c=\tfrac32$, $r=\tfrac34$ and $z_\ell=c+r\,\e(\ell/M)$ for
+$0\le\ell<M$.  For $h$ analytic on the closed disc $|z-c|\le\tfrac78$ put
+\[
+  Q_Mh(y)=\frac1M\sum_{\ell=0}^{M-1}h(z_\ell)\,\frac{z_\ell-c}{z_\ell-y}.
+\]
+
+\begin{lemma}\label{lem:quad}
+If $|h|\le H$ on the disc $|z-c|\le\tfrac78$ and $M\ge1$, then
+$|Q_Mh(y)-h(y)|\le 49\,H\,(6/7)^M$ for all real $1\le y\le2$.
+\end{lemma}
+
+This is the geometric convergence of the trapezoidal rule on a circle
+\cite{TW}, with explicit constants.  We apply it to three functions: the
+phase $h(z)=\e(z-1)$ at $y=1+x/d$; the logarithm
+$h_j(z)=j\log2+\log z$ at $y=t/2^{j}$, where $t=2^jy$ and
+$j=\lfloor\log_2t\rfloor$; and its reciprocal $1/h_j$ for $j\ge1$.  All
+three are analytic and suitably bounded on the disc.  Consequently every
+factor in \eqref{eq:four} is, up to an error $2^{-\Omega(M)}$, a linear
+combination of $M$ \emph{reciprocal kernels} $1/(z_\ell-y)$ with coefficients
+that depend on $\ell$ and on the dyadic scale $j$ only.  Using the kernel for
+the phases as well avoids any long chain of rotations.
+
+\subsection{Fixed point arithmetic and exact rounding}
+Let $\beta=\lfloor\log_2N\rfloor+1$ (and $\beta=1$ for $N=0$).  We take
+$M=35\beta+185$ nodes, round nodes and coefficients to $p=7\beta+32$ binary
+places, and truncate every reciprocal kernel towards zero at $t=7\beta+25$
+binary places.  If $z=(U+iV)/2^p$ and $y=a/q$, then
+with $X=Uq-2^pa$, $Y=Vq$ and $D=X^2+Y^2>0$ the absolute values of the real
+and imaginary parts of the truncated kernel are the integers
+\begin{equation}\label{eq:quot}
+  \Bigl\lfloor\frac{2^{t}2^{p}q\,|X|}{D}\Bigr\rfloor,\qquad
+  \Bigl\lfloor\frac{2^{t}2^{p}q\,|Y|}{D}\Bigr\rfloor .
+\end{equation}
+Each of the four factors is then within $\delta=2^{-(6\beta+6)}$ of its true
+value, a product of four is within $(12+10\beta)\delta$, and the weights and
+the number of summands contribute at most $N^4$.  The total error of the
+resulting finite expression $\widetilde S(N)$ is therefore at most
+$N^4(12+10\beta)\,2^{-(6\beta+6)}<\tfrac12$, so that
+\[
+  \bigl\lfloor\re\widetilde S(N)+\tfrac12\bigr\rfloor=S(N)
+  \qquad\text{for every }N\in\N .
+\]
+The coefficients need not be exact roundings of transcendental numbers: any
+table within a stated tolerance works, and such a table is produced in
+polynomial time by rational Taylor series with explicit error certificates.
+
+\subsection{One counting network}
+Expanding the four linear combinations, the real and imaginary parts and the
+signs, $\widetilde S(N)$ becomes an integer linear combination, with
+$\beta^{O(1)}$ terms and coefficients computed outside the engine, of sums
+\[
+  \sum n\cdot q_1q_2q_3q_4
+\]
+over the arithmetic data $(n,d,m,x,x')$ in fixed dyadic ranges, where the
+$q_i$ are quotients of the form \eqref{eq:quot} at four chosen nodes.  Each
+such sum is the number of solutions of one explicit system: the relation
+$n=dm$, the two B\'ezout witnesses, a quotient and remainder for each kernel,
+and free variables $v_i<q_i$ and $v_0<n$ that turn weights into
+multiplicities.  The system has $72$ variables, $33$ equations and $132$
+product slots, each variable has $O(\beta)$ bits, and all auxiliary variables are
+uniquely determined.  The boundary cases ($d=1$, $x=1$, zero quotients, sign
+branches) are treated separately.
+
+\subsection{The machines}
+The machine for Theorem~\ref{thm:sum} generates the coefficient table,
+enumerates the queries, obtains the counts from
+Proposition~\ref{prop:engine}, forms the integer linear combination, divides
+exactly by the common denominator and rounds.  For Theorem~\ref{thm:count}
+the multiplicity variable $v_0<n$ is replaced by $v_0<1$; the error budget
+and the rest of the construction are unchanged.  For
+Theorem~\ref{thm:find}, note that for $a\le c$ one has $S(a)<S(c)$ if and
+only if the interval $(a,c]$ contains a prime.  By Bertrand's postulate
+$(N,2\max(N,1)]$ contains a prime, and bisection with the invariant
+$S(\mathrm{left})=S(N)<S(\mathrm{right})$ ends at a prime after $b(N)+3$
+evaluations of $S$.  The adaptive version of
+Proposition~\ref{prop:engine} accounts for all of them in one machine.
+
+\section{Formal verification}
+
+The three theorems are stated in a file \lean{PrimeIndependent/MainResults.lean}
+that imports only Mathlib and uses none of the definitions of the proof; in
+particular $\pi(N)$ is Mathlib's \lean{Nat.primeCounting} and the prime found
+in Theorem~\ref{thm:find} is specified by its properties, not by the search
+procedure.  The correspondence is as follows.
+
+\smallskip
+\begin{center}
+\begin{tabular}{ll}
+Theorem~\ref{thm:sum} & \lean{PrimeIndependent.primeSum\_time} \\
+Theorem~\ref{thm:count} & \lean{PrimeIndependent.primeCounting\_time} \\
+Theorem~\ref{thm:find} & \lean{PrimeIndependent.primeFinding\_time} \\
+Lemma~\ref{lem:quad} & \lean{PrimeAlgorithm.Cauchy.cauchyApprox\_error} \\
+Exact rounding & \lean{FixedCauchyPrimeSum.fixedPrimeSum\_all\_inputs} \\
+Proposition~\ref{prop:engine} &
+  \lean{NatBatchQuery.machine\_TM\_linear\_input} \\
+Coefficient generation & \lean{CertifiedGenerator.generate\_certified} \\
+\end{tabular}
+\end{center}
+\smallskip
+
+The development uses Lean~4.33.1 and builds on the formalization of
+\cite{A} (commit \lean{16a5ce4}) and on the library of \cite{T1} (commit
+\lean{4193596}), neither of which is modified.  The three theorems depend
+only on the axioms \lean{propext}, \lean{Classical.choice} and
+\lean{Quot.sound}.  The whole dependency closure, including all of Mathlib,
+was built from source without caches; the result was replayed with
+\lean{leanchecker --fresh} and compared against the specification with
+Comparator, which checks the proofs with the Lean kernel and with the
+independent kernel nanoda.  These checks were all run on one machine;
+independent reproduction is welcome.
+
+\smallskip\noindent
+Source: \url{https://github.com/6teamFurina/prime-algorithm},
+release \texttt{v0.1-verified}.  The release tag identifies the source commit.
+The repository is private at the time of this release.
+
+\section{Remarks}
+
+\begin{remark}
+The exponent in Proposition~\ref{prop:engine} depends on the number of shared
+bits of one system, so the reduction must keep that number linear in $b$.
+This is why the logarithm is not computed by a circuit inside the network:
+it is replaced by $O(b)$ rational kernels of constant arithmetic complexity,
+whose linear combination is formed outside.  The same reason forces the
+input to the engine to be padded only linearly.
+\end{remark}
+
+\begin{remark}
+The method computes weighted sums over the integers up to $N$ of products of
+a bounded number of analytic factors and Ramanujan phases.  We expect it to
+apply to other summatory functions, such as the Mertens function, but only
+the three theorems above have been formalized.
+\end{remark}
+
+\begin{remark}
+The full paper will contain complete proofs of Lemma~\ref{lem:quad}, of the
+error budget, of the counting bijection for the network and of the bit
+bounds, following the formal development.
+\end{remark}
+
+\subsection*{Release preparation}
+AI tools assisted with preparing the repository and its reproduction scripts.
+The mathematical verification described above is based on the recorded
+checker executions.
+
+\begin{thebibliography}{99}
+
+\bibitem{A} Anthropic,
+\emph{A $2^{o(n)}$ time algorithm for 3-SAT},
+Hexagon 2610.00577 (2026); Lean formalization at
+\url{https://github.com/anthropics/formal-math}.
+
+\bibitem{DR} M.~Del\'eglise and J.~Rivat,
+\emph{Computing $\pi(x)$: the Meissel, Lehmer, Lagarias, Miller, Odlyzko
+method}, Math. Comp. \textbf{65} (1996), 235--245.
+
+\bibitem{HKM} D.~Hirsch, I.~Kessler and U.~Mendlovic,
+\emph{Computing $\pi(N)$: an elementary approach in $\tilde O(\sqrt N)$
+time}, arXiv:2212.09857.
+
+\bibitem{LMO} J.~C.~Lagarias, V.~S.~Miller and A.~M.~Odlyzko,
+\emph{Computing $\pi(x)$: the Meissel--Lehmer method},
+Math. Comp. \textbf{44} (1985), 537--560.
+
+\bibitem{LO} J.~C.~Lagarias and A.~M.~Odlyzko,
+\emph{Computing $\pi(x)$: an analytic method},
+J. Algorithms \textbf{8} (1987), 173--191.
+
+\bibitem{O} OpenAI,
+\emph{The Exponential Time Hypothesis is false}, preprint (October 2026),
+\url{https://github.com/openai/math}.
+
+\bibitem{R} S.~Ramanujan,
+\emph{On certain trigonometrical sums and their applications in the theory
+of numbers}, Trans. Cambridge Philos. Soc. \textbf{22} (1918), 259--276.
+
+\bibitem{RR} I.~Rudich and L.-M.~Rousseau,
+\emph{Deterministic factoring in time $N^{o(1)}$},
+Hexagon 2610.00600 (2026).
+
+\bibitem{TCH} T.~Tao, E.~Croot III and H.~Helfgott,
+\emph{Deterministic methods to find primes},
+Math. Comp. \textbf{81} (2012), 1233--1246.
+
+\bibitem{TW} L.~N.~Trefethen and J.~A.~C.~Weideman,
+\emph{The exponentially convergent trapezoidal rule},
+SIAM Rev. \textbf{56} (2014), 385--458.
+
+\bibitem{T1} V.~Tulsyan,
+\emph{The parity of the prime-counting function in time $x^{o(1)}$},
+Hexagon 2611.00116 (2026); Lean library at
+\url{https://github.com/xennygrimmato/eth-hamiltonicity}.
+
+\bibitem{T2} V.~Tulsyan,
+\emph{What the ETH refutations do not give: barriers for the counting
+engines, with machine-checked lemmas}, Hexagon 2611.00149 (2026).
+
+\end{thebibliography}
+
+\end{document}

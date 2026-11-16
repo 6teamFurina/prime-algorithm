@@ -1,0 +1,2 @@
+warning: manifest out of date: source kind (git/path) of dependency 'mathlib' changed; use `lake update mathlib` to update it
+replaying PrimeIndependent.Solution with --fresh

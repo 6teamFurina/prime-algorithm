@@ -1,0 +1,15 @@
+# Independently readable Mathlib-only specifications and their proof endpoints.
+[[lean_lib]]
+name = "PrimeIndependentMainResults"
+srcDir = "../../formal/independent"
+roots = ["PrimeIndependent.MainResults"]
+
+[[lean_lib]]
+name = "PrimeIndependentChallenge"
+srcDir = "../../formal/independent"
+roots = ["PrimeIndependent.Challenge"]
+
+[[lean_lib]]
+name = "PrimeIndependentSolution"
+srcDir = "../../formal/independent"
+roots = ["PrimeIndependent.Solution"]

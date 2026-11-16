@@ -1,0 +1,465 @@
+{
+  "status": "passed",
+  "recorded_utc": "2026-11-16T00:35:26.508876+00:00",
+  "endpoints": [
+    "PrimeIndependent.primeSum_time",
+    "PrimeIndependent.primeCounting_time",
+    "PrimeIndependent.primeFinding_time"
+  ],
+  "validation_run_id": "72ea63e4-8e5d-42d1-8468-2df02d7b3647",
+  "coverage_checks": {
+    "zero_artifact_start": true,
+    "full_source_build_baseline": true,
+    "all_stages_passed": true,
+    "all_three_endpoints": true,
+    "same_workspace": true,
+    "same_run": true,
+    "inputs_unchanged_since_build": true,
+    "checks_after_build": true,
+    "kernel_acceptances": true,
+    "tools_ready": true
+  },
+  "full_source_build_record": "/Users/furinaovo/Documents/Prime Algorithm/research/independent-history/two-endpoints-20261115/independent-clean-build.json",
+  "full_source_build_log": "/Users/furinaovo/Documents/Prime Algorithm/research/independent-history/two-endpoints-20261115/independent-clean-build.log",
+  "scope": "Fresh isolated directory on the same host; dependency and project proof artifacts rebuilt from source",
+  "bootstrap": "Pinned Lean 4.33.1 binary distribution, including Init/Lean/Std/Lake",
+  "per_file_hash_audit": false,
+  "records": {
+    "preparation": {
+      "status": "prepared",
+      "workspace": "/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115",
+      "toolchain": "leanprover/lean4:v4.33.1",
+      "source_pins": [
+        {
+          "name": "anthropic-formal-math",
+          "revision": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5"
+        },
+        {
+          "name": "eth-hamiltonicity",
+          "revision": "41935962f954a4204446f4eddc438b3af6831722"
+        },
+        {
+          "name": "mathlib",
+          "revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+          "url": "https://github.com/leanprover-community/mathlib4"
+        },
+        {
+          "name": "plausible",
+          "revision": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+          "url": "https://github.com/leanprover-community/plausible"
+        },
+        {
+          "name": "LeanSearchClient",
+          "revision": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+          "url": "https://github.com/leanprover-community/LeanSearchClient"
+        },
+        {
+          "name": "importGraph",
+          "revision": "16f02aa7642864af59f1ff0e384a015994db9118",
+          "url": "https://github.com/leanprover-community/import-graph"
+        },
+        {
+          "name": "proofwidgets",
+          "revision": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+          "url": "https://github.com/leanprover-community/ProofWidgets4"
+        },
+        {
+          "name": "aesop",
+          "revision": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+          "url": "https://github.com/leanprover-community/aesop"
+        },
+        {
+          "name": "Qq",
+          "revision": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+          "url": "https://github.com/leanprover-community/quote4"
+        },
+        {
+          "name": "batteries",
+          "revision": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+          "url": "https://github.com/leanprover-community/batteries"
+        },
+        {
+          "name": "Cli",
+          "revision": "6130a47896ce867c6a4a55373441e59e565bad0f",
+          "url": "https://github.com/leanprover/lean4-cli"
+        }
+      ],
+      "initial_compiled_lean_artifacts": 0,
+      "hash_audits": false,
+      "dependency_materialization": "git archive at locked revisions; local path manifest",
+      "bootstrap": "Pinned Lean 4.33.1 binary distribution, including Init/Lean/Std/Lake",
+      "scope": "Fresh isolated directory on the same host; dependency and project proof artifacts rebuilt from source",
+      "full_source_build_record": "research/independent-history/two-endpoints-20261115/independent-clean-build.json"
+    },
+    "source_build": {
+      "status": "passed",
+      "started_utc": "2026-11-16T00:16:51.645543+00:00",
+      "workspace": "/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115",
+      "endpoints": [
+        "PrimeIndependent.primeSum_time",
+        "PrimeIndependent.primeCounting_time",
+        "PrimeIndependent.primeFinding_time"
+      ],
+      "validation_run_id": "72ea63e4-8e5d-42d1-8468-2df02d7b3647",
+      "targets": [
+        "Mathlib",
+        "statements",
+        "machines",
+        "networks",
+        "threesat",
+        "consequences",
+        "sparsification",
+        "rates",
+        "variables",
+        "maintheorem",
+        "MainResults",
+        "Challenge",
+        "Solution",
+        "PaperIndex",
+        "PrimeIndependent.Solution",
+        "PrimeIndependent.Challenge",
+        "PrimeAlgorithm.PrimeFindingMachine"
+      ],
+      "reproduction_command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "/Users/furinaovo/Documents/Prime Algorithm/scripts/independent_lake.py",
+        "build",
+        "Mathlib",
+        "statements",
+        "machines",
+        "networks",
+        "threesat",
+        "consequences",
+        "sparsification",
+        "rates",
+        "variables",
+        "maintheorem",
+        "MainResults",
+        "Challenge",
+        "Solution",
+        "PaperIndex",
+        "PrimeIndependent.Solution",
+        "PrimeIndependent.Challenge",
+        "PrimeAlgorithm.PrimeFindingMachine"
+      ],
+      "actual_commands": [
+        [
+          "/Library/Developer/CommandLineTools/usr/bin/python3",
+          "/Users/furinaovo/Documents/Prime Algorithm/scripts/independent_lake.py",
+          "build",
+          "Mathlib",
+          "statements",
+          "machines",
+          "networks",
+          "threesat",
+          "consequences",
+          "sparsification",
+          "rates",
+          "variables",
+          "maintheorem",
+          "MainResults",
+          "Challenge",
+          "Solution",
+          "PaperIndex",
+          "PrimeIndependent.Solution",
+          "PrimeIndependent.Challenge",
+          "PrimeAlgorithm.PrimeFindingMachine"
+        ]
+      ],
+      "initial_compiled_lean_artifacts": 0,
+      "cache_policy": "--no-cache; system/artifact/Mathlib cache disabled; inherited Lean search paths removed",
+      "bootstrap": "Pinned Lean 4.33.1 binary distribution, including Init/Lean/Std/Lake",
+      "scope": "Fresh isolated directory on the same host; dependency and project proof artifacts rebuilt from source",
+      "log": "/Users/furinaovo/Documents/Prime Algorithm/research/independent-clean-build.log",
+      "per_file_hash_audit": false,
+      "build_mode": "Incremental endpoint build using dependencies previously built from source",
+      "full_source_build_record": "research/independent-history/two-endpoints-20261115/independent-clean-build.json",
+      "exit_code": 0,
+      "finished_utc": "2026-11-16T00:17:23.218403+00:00",
+      "mathlib_source_modules": 8312,
+      "mathlib_modules_without_built_olean": []
+    },
+    "fresh_replay": {
+      "status": "passed",
+      "started_utc": "2026-11-16T00:17:31.975944+00:00",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "/Users/furinaovo/Documents/Prime Algorithm/scripts/independent_lake.py",
+        "env",
+        "leanchecker",
+        "--fresh",
+        "--verbose",
+        "PrimeIndependent.Solution"
+      ],
+      "workspace": "/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115",
+      "endpoints": [
+        "PrimeIndependent.primeSum_time",
+        "PrimeIndependent.primeCounting_time",
+        "PrimeIndependent.primeFinding_time"
+      ],
+      "validation_run_id": "72ea63e4-8e5d-42d1-8468-2df02d7b3647",
+      "scope": "All declarations of PrimeIndependent.Solution and its imports, including all three endpoints",
+      "checker": "Pinned Lean 4.33.1 leanchecker --fresh; additional verification to nanoda",
+      "log": "/Users/furinaovo/Documents/Prime Algorithm/research/independent-fresh-replay.log",
+      "exit_code": 0,
+      "finished_utc": "2026-11-16T00:32:42.565527+00:00"
+    },
+    "independent_kernel": {
+      "status": "passed",
+      "started_utc": "2026-11-16T00:32:52.863233+00:00",
+      "workspace": "/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115",
+      "configuration": "/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/formal/independent/comparator.json",
+      "endpoints": [
+        "PrimeIndependent.primeSum_time",
+        "PrimeIndependent.primeCounting_time",
+        "PrimeIndependent.primeFinding_time"
+      ],
+      "validation_run_id": "72ea63e4-8e5d-42d1-8468-2df02d7b3647",
+      "theorems": [
+        "PrimeIndependent.primeSum_time",
+        "PrimeIndependent.primeCounting_time",
+        "PrimeIndependent.primeFinding_time"
+      ],
+      "permitted_axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "lean_path": "/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/dependencies/Cli/.lake/build/lib/lean:/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/dependencies/batteries/.lake/build/lib/lean:/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/dependencies/Qq/.lake/build/lib/lean:/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/dependencies/aesop/.lake/build/lib/lean:/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/dependencies/proofwidgets/.lake/build/lib/lean:/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/dependencies/importGraph/.lake/build/lib/lean:/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/dependencies/LeanSearchClient/.lake/build/lib/lean:/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/dependencies/plausible/.lake/build/lib/lean:/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/dependencies/mathlib/.lake/build/lib/lean:/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/.lake/build/lib/lean:/Users/furinaovo/Documents/Prime Algorithm/.elan/toolchains/leanprover--lean4---v4.33.1/lib/lean",
+      "bootstrap_library": "/Users/furinaovo/Documents/Prime Algorithm/.elan/toolchains/leanprover--lean4---v4.33.1/lib/lean",
+      "sandbox": "macOS Seatbelt adapter; default-deny writes and network",
+      "comparator": "leanprover/comparator @ 575674928e239f5bc452aab72d1dd7b0f1326494",
+      "exporter": "lean4export v4.33.0 built with Lean v4.33.1",
+      "nanoda": "nanoda_bin 0.4.19 from the official Lean v4.35.0 toolchain",
+      "log": "/Users/furinaovo/Documents/Prime Algorithm/research/independent-comparator.log",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "/Users/furinaovo/Documents/Prime Algorithm/scripts/independent_lake.py",
+        "env",
+        "/Users/furinaovo/Documents/Prime Algorithm/external/verification-tools/comparator/.lake/build/bin/comparator",
+        "/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/formal/independent/comparator.json"
+      ],
+      "exit_code": 0,
+      "checks": {
+        "comparator_acceptance": true,
+        "nanoda_acceptance": true,
+        "lean_replay_acceptance": true
+      },
+      "finished_utc": "2026-11-16T00:35:09.121860+00:00"
+    },
+    "tools": {
+      "status": "ready",
+      "started_utc": "2026-11-15T21:08:22.494344+00:00",
+      "installation_root": "/Users/furinaovo/Documents/Prime Algorithm/external/verification-tools",
+      "elan_home": "/Users/furinaovo/Documents/Prime Algorithm/.elan",
+      "reuse_only": true,
+      "commands": [
+        {
+          "argv": [
+            "git",
+            "-C",
+            "/Users/furinaovo/Documents/Prime Algorithm/external/verification-tools/comparator",
+            "rev-parse",
+            "HEAD"
+          ],
+          "cwd": "/Users/furinaovo/Documents/Prime Algorithm",
+          "exit_code": 0,
+          "output": "575674928e239f5bc452aab72d1dd7b0f1326494\n"
+        },
+        {
+          "argv": [
+            "git",
+            "-C",
+            "/Users/furinaovo/Documents/Prime Algorithm/external/verification-tools/lean4export",
+            "rev-parse",
+            "HEAD"
+          ],
+          "cwd": "/Users/furinaovo/Documents/Prime Algorithm",
+          "exit_code": 0,
+          "output": "15f6055e299ad5b89345e533cc2192f4cc00f659\n"
+        },
+        {
+          "argv": [
+            "/Users/furinaovo/Documents/Prime Algorithm/.elan/toolchains/leanprover--lean4---v4.34.0-rc1/bin/lean",
+            "--version"
+          ],
+          "cwd": "/Users/furinaovo/Documents/Prime Algorithm",
+          "exit_code": 0,
+          "output": "Lean (version 4.34.0-rc1, arm64-apple-darwin24.6.0, commit 3447a668783dbce1a8fdb97101dd067687b2b418, Release)\n"
+        },
+        {
+          "argv": [
+            "/Users/furinaovo/Documents/Prime Algorithm/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+            "--version"
+          ],
+          "cwd": "/Users/furinaovo/Documents/Prime Algorithm",
+          "exit_code": 0,
+          "output": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)\n"
+        },
+        {
+          "argv": [
+            "/Users/furinaovo/Documents/Prime Algorithm/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+            "--version"
+          ],
+          "cwd": "/Users/furinaovo/Documents/Prime Algorithm",
+          "exit_code": 0,
+          "output": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)\n"
+        },
+        {
+          "argv": [
+            "/Users/furinaovo/Documents/Prime Algorithm/.elan/toolchains/leanprover--lean4---v4.35.0/bin/nanoda_bin",
+            "--help"
+          ],
+          "cwd": "/Users/furinaovo/Documents/Prime Algorithm",
+          "exit_code": 0,
+          "output": "nanoda_bin 0.4.19"
+        },
+        {
+          "argv": [
+            "/Users/furinaovo/Documents/Prime Algorithm/external/verification-tools/lean4export/.lake/build/bin/lean4export",
+            "--"
+          ],
+          "cwd": "/Users/furinaovo/Documents/Prime Algorithm",
+          "exit_code": 0,
+          "output": "{\"meta\":{\"exporter\":{\"name\":\"lean4export\",\"version\":\"3.1.0\"},\"format\":{\"version\":\"3.1.0\"},\"lean\":{\"githash\":\"819816b2e0a3bf405af45ae5c7af2491d8f5bee6\",\"version\":\"4.33.1\"}}}\n"
+        }
+      ],
+      "source_digest_audits": false,
+      "finished_utc": "2026-11-15T21:08:23.247725+00:00",
+      "comparator": {
+        "repository": "https://github.com/leanprover/comparator",
+        "revision": "575674928e239f5bc452aab72d1dd7b0f1326494",
+        "binary": "/Users/furinaovo/Documents/Prime Algorithm/external/verification-tools/comparator/.lake/build/bin/comparator",
+        "build_toolchain": "Lean (version 4.34.0-rc1, arm64-apple-darwin24.6.0, commit 3447a668783dbce1a8fdb97101dd067687b2b418, Release)",
+        "reused_binary": true,
+        "note": "The pinned upstream Comparator has its own Lean 4.34.0-rc1 build toolchain; it replays the serialized 4.33.1 proof export."
+      },
+      "exporter": {
+        "repository": "https://github.com/leanprover/lean4export",
+        "tag": "v4.33.0",
+        "revision": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+        "binary": "/Users/furinaovo/Documents/Prime Algorithm/external/verification-tools/lean4export/.lake/build/bin/lean4export",
+        "build_toolchain": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+        "reused_binary": true,
+        "metadata": {
+          "exporter": {
+            "name": "lean4export",
+            "version": "3.1.0"
+          },
+          "format": {
+            "version": "3.1.0"
+          },
+          "lean": {
+            "githash": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+            "version": "4.33.1"
+          }
+        },
+        "note": "Upstream CI patch fallback: v4.33.0 exporter source compiled with project Lean 4.33.1."
+      },
+      "nanoda": {
+        "binary": "/Users/furinaovo/Documents/Prime Algorithm/.elan/toolchains/leanprover--lean4---v4.35.0/bin/nanoda_bin",
+        "version": "0.4.19",
+        "source": "Official Lean v4.35.0 binary distribution",
+        "distribution_url": "https://github.com/leanprover/lean4/releases/tag/v4.35.0",
+        "distribution_lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+        "note": "Independent Rust kernel, version 0.4.19; intentionally records the difference from upstream CI old 0.4.6-beta pin."
+      },
+      "sandbox": {
+        "kind": "macOS Seatbelt",
+        "adapter": "/Users/furinaovo/Documents/Prime Algorithm/scripts/comparator_macos_sandbox.py",
+        "policy": "Default deny; source files read-only, explicit build directories writable, no network or Mach services."
+      },
+      "next_command": "python3 scripts/check_independent.py",
+      "upstream_ci": "https://github.com/anthropics/formal-math/blob/16a5ce41304fcdaea4e0be7c132e1c361dc26da5/.github/scripts/comparator-check.sh"
+    },
+    "full_source_build_baseline": {
+      "status": "passed",
+      "exit_code": 0,
+      "started_utc": "2026-11-15T21:01:56.718441+00:00",
+      "finished_utc": "2026-11-15T21:58:33.685837+00:00",
+      "workspace": "/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115",
+      "targets": [
+        "Mathlib",
+        "statements",
+        "machines",
+        "networks",
+        "threesat",
+        "consequences",
+        "sparsification",
+        "rates",
+        "variables",
+        "maintheorem",
+        "MainResults",
+        "Challenge",
+        "Solution",
+        "PaperIndex",
+        "PrimeIndependent.Solution",
+        "PrimeIndependent.Challenge",
+        "PrimeAlgorithm.PrimeFindingMachine"
+      ],
+      "reproduction_command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "/Users/furinaovo/Documents/Prime Algorithm/scripts/independent_lake.py",
+        "build",
+        "Mathlib",
+        "statements",
+        "machines",
+        "networks",
+        "threesat",
+        "consequences",
+        "sparsification",
+        "rates",
+        "variables",
+        "maintheorem",
+        "MainResults",
+        "Challenge",
+        "Solution",
+        "PaperIndex",
+        "PrimeIndependent.Solution",
+        "PrimeIndependent.Challenge",
+        "PrimeAlgorithm.PrimeFindingMachine"
+      ],
+      "actual_commands": [
+        [
+          "/Library/Developer/CommandLineTools/usr/bin/python3",
+          "/Users/furinaovo/Documents/Prime Algorithm/scripts/independent_lake.py",
+          "build",
+          "Mathlib",
+          "PrimeIndependent.Solution",
+          "PrimeIndependent.Challenge",
+          "PrimeAlgorithm.PrimeFindingMachine"
+        ],
+        [
+          "/Library/Developer/CommandLineTools/usr/bin/python3",
+          "/Users/furinaovo/Documents/Prime Algorithm/scripts/independent_lake.py",
+          "build",
+          "Mathlib",
+          "statements",
+          "machines",
+          "networks",
+          "threesat",
+          "consequences",
+          "sparsification",
+          "rates",
+          "variables",
+          "maintheorem",
+          "MainResults",
+          "Challenge",
+          "Solution",
+          "PaperIndex",
+          "PrimeIndependent.Solution",
+          "PrimeIndependent.Challenge",
+          "PrimeAlgorithm.PrimeFindingMachine"
+        ]
+      ],
+      "initial_compiled_lean_artifacts": 0,
+      "cache_policy": "--no-cache; system/artifact/Mathlib cache disabled; inherited Lean search paths removed",
+      "mathlib_source_modules": 8312,
+      "mathlib_modules_without_built_olean": [],
+      "bootstrap": "Pinned Lean 4.33.1 binary distribution, including Init/Lean/Std/Lake",
+      "scope": "Fresh isolated directory on the same host; dependency and project proof artifacts rebuilt from source",
+      "log": "/Users/furinaovo/Documents/Prime Algorithm/research/independent-clean-build.log",
+      "per_file_hash_audit": false
+    }
+  }
+}

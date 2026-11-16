@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "started_utc": "2026-11-16T00:32:52.863233+00:00",
+  "workspace": "/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115",
+  "configuration": "/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/formal/independent/comparator.json",
+  "endpoints": [
+    "PrimeIndependent.primeSum_time",
+    "PrimeIndependent.primeCounting_time",
+    "PrimeIndependent.primeFinding_time"
+  ],
+  "validation_run_id": "72ea63e4-8e5d-42d1-8468-2df02d7b3647",
+  "theorems": [
+    "PrimeIndependent.primeSum_time",
+    "PrimeIndependent.primeCounting_time",
+    "PrimeIndependent.primeFinding_time"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "lean_path": "/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/dependencies/Cli/.lake/build/lib/lean:/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/dependencies/batteries/.lake/build/lib/lean:/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/dependencies/Qq/.lake/build/lib/lean:/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/dependencies/aesop/.lake/build/lib/lean:/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/dependencies/proofwidgets/.lake/build/lib/lean:/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/dependencies/importGraph/.lake/build/lib/lean:/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/dependencies/LeanSearchClient/.lake/build/lib/lean:/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/dependencies/plausible/.lake/build/lib/lean:/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/dependencies/mathlib/.lake/build/lib/lean:/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/.lake/build/lib/lean:/Users/furinaovo/Documents/Prime Algorithm/.elan/toolchains/leanprover--lean4---v4.33.1/lib/lean",
+  "bootstrap_library": "/Users/furinaovo/Documents/Prime Algorithm/.elan/toolchains/leanprover--lean4---v4.33.1/lib/lean",
+  "sandbox": "macOS Seatbelt adapter; default-deny writes and network",
+  "comparator": "leanprover/comparator @ 575674928e239f5bc452aab72d1dd7b0f1326494",
+  "exporter": "lean4export v4.33.0 built with Lean v4.33.1",
+  "nanoda": "nanoda_bin 0.4.19 from the official Lean v4.35.0 toolchain",
+  "log": "/Users/furinaovo/Documents/Prime Algorithm/research/independent-comparator.log",
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "/Users/furinaovo/Documents/Prime Algorithm/scripts/independent_lake.py",
+    "env",
+    "/Users/furinaovo/Documents/Prime Algorithm/external/verification-tools/comparator/.lake/build/bin/comparator",
+    "/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115/formal/independent/comparator.json"
+  ],
+  "exit_code": 0,
+  "checks": {
+    "comparator_acceptance": true,
+    "nanoda_acceptance": true,
+    "lean_replay_acceptance": true
+  },
+  "finished_utc": "2026-11-16T00:35:09.121860+00:00"
+}

@@ -1,0 +1,7 @@
+# Unified prime-sum proof: numerical correctness and the machine engine use
+# this same pinned Lean 4.33.1 / Mathlib toolchain.
+[[lean_lib]]
+name = "PrimeAlgorithm"
+srcDir = "../../formal/unified"
+roots = ["PrimeAlgorithm.FixedCauchyPrimeSum"]
+globs = ["PrimeAlgorithm.+"]

@@ -1,0 +1,67 @@
+{
+  "status": "prepared",
+  "workspace": "/Users/furinaovo/Documents/Prime Algorithm/release/prime-algorithm/external/source-only-final-check",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "source_pins": [
+    {
+      "name": "anthropic-formal-math",
+      "revision": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+      "url": "https://github.com/anthropics/formal-math.git"
+    },
+    {
+      "name": "eth-hamiltonicity",
+      "revision": "41935962f954a4204446f4eddc438b3af6831722",
+      "url": "https://github.com/xennygrimmato/eth-hamiltonicity.git"
+    },
+    {
+      "name": "mathlib",
+      "revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "url": "https://github.com/leanprover-community/mathlib4"
+    },
+    {
+      "name": "plausible",
+      "revision": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "url": "https://github.com/leanprover-community/plausible"
+    },
+    {
+      "name": "LeanSearchClient",
+      "revision": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "url": "https://github.com/leanprover-community/LeanSearchClient"
+    },
+    {
+      "name": "importGraph",
+      "revision": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "url": "https://github.com/leanprover-community/import-graph"
+    },
+    {
+      "name": "proofwidgets",
+      "revision": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+      "url": "https://github.com/leanprover-community/ProofWidgets4"
+    },
+    {
+      "name": "aesop",
+      "revision": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "url": "https://github.com/leanprover-community/aesop"
+    },
+    {
+      "name": "Qq",
+      "revision": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "url": "https://github.com/leanprover-community/quote4"
+    },
+    {
+      "name": "batteries",
+      "revision": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "url": "https://github.com/leanprover-community/batteries"
+    },
+    {
+      "name": "Cli",
+      "revision": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "url": "https://github.com/leanprover/lean4-cli"
+    }
+  ],
+  "initial_compiled_lean_artifacts": 0,
+  "hash_audits": false,
+  "dependency_materialization": "git archive at locked revisions; local path manifest",
+  "bootstrap": "Pinned Lean 4.33.1 binary distribution, including Init/Lean/Std/Lake",
+  "scope": "Fresh isolated directory on this host; dependency and project proofs rebuilt from source"
+}

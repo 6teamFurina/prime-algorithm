@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "release": "v0.1-verified",
+  "recorded_utc": "2026-11-16T03:33:13.155990+00:00",
+  "scope": "Release packaging, initialization, ordinary Lean build, recursive axiom audit, and source-only preparation",
+  "proof_sources": {
+    "retained_lean_files": 96,
+    "byte_for_byte_equal_to_previously_verified_sources": true,
+    "proof_content_modified": false
+  },
+  "initialization": {
+    "pinned_git_sources_materialized": true,
+    "all_three_independent_targets_registered": true,
+    "repeat_bootstrap_passed": true,
+    "source_transport": "Existing local Git repositories supplied the exact locked Git objects; no upstream or project proof artifacts were copied",
+    "lean_bootstrap": "Previously installed pinned Lean 4.33.1 binary distribution",
+    "mathlib_cache": "Official pinned Mathlib cache reused for the ordinary build"
+  },
+  "ordinary_build_and_axiom_audit": {
+    "status": "passed",
+    "started_utc": "2026-11-16T03:28:06.233559+00:00",
+    "scope": "Final release targets; ordinary build and recursive axiom audit",
+    "endpoints": [
+      "PrimeIndependent.primeSum_time",
+      "PrimeIndependent.primeCounting_time",
+      "PrimeIndependent.primeFinding_time"
+    ],
+    "axioms": {
+      "PrimeIndependent.primeSum_time": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "PrimeIndependent.primeCounting_time": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "PrimeIndependent.primeFinding_time": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "exit_code": 0,
+    "finished_utc": "2026-11-16T03:32:25.490809+00:00"
+  },
+  "source_only_preparation": {
+    "passed": true,
+    "compiled_proof_artifacts": 0,
+    "project_sources_match_release": true,
+    "existing_directory_rejected": true
+  },
+  "paper": {
+    "pages": 5,
+    "latex_build_passed": true,
+    "final_latex_warnings": [],
+    "all_pages_visually_reviewed": true,
+    "repository_and_version_filled": true
+  },
+  "full_source_build_and_dual_kernel_repeated_for_this_packaging_run": false,
+  "independent_proof_evidence": "verification/original/independent-chain.json and its accompanying original final logs",
+  "notes": [
+    "The original complete independent verification is preserved unchanged.",
+    "This record does not relabel the release packaging checks as another from-zero source build or another dual-kernel run."
+  ]
+}

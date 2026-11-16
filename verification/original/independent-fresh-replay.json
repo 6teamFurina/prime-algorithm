@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "started_utc": "2026-11-16T00:17:31.975944+00:00",
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "/Users/furinaovo/Documents/Prime Algorithm/scripts/independent_lake.py",
+    "env",
+    "leanchecker",
+    "--fresh",
+    "--verbose",
+    "PrimeIndependent.Solution"
+  ],
+  "workspace": "/Users/furinaovo/Documents/Prime Algorithm/external/independent-clean-20261115",
+  "endpoints": [
+    "PrimeIndependent.primeSum_time",
+    "PrimeIndependent.primeCounting_time",
+    "PrimeIndependent.primeFinding_time"
+  ],
+  "validation_run_id": "72ea63e4-8e5d-42d1-8468-2df02d7b3647",
+  "scope": "All declarations of PrimeIndependent.Solution and its imports, including all three endpoints",
+  "checker": "Pinned Lean 4.33.1 leanchecker --fresh; additional verification to nanoda",
+  "log": "/Users/furinaovo/Documents/Prime Algorithm/research/independent-fresh-replay.log",
+  "exit_code": 0,
+  "finished_utc": "2026-11-16T00:32:42.565527+00:00"
+}

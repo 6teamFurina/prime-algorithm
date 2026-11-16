@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+"""Run Lake in the prepared engine with the release's registered proof sources."""
+import os
+import sys
+from release_common import ENGINE, TOOLCHAIN, environment
+
+if not (ENGINE / 'lakefile.toml').is_file() or not (TOOLCHAIN / 'bin/lake').is_file():
+    raise SystemExit('Run python3 scripts/bootstrap.py first.')
+os.chdir(ENGINE)
+binary = str(TOOLCHAIN / 'bin/lake')
+os.execve(binary, [binary, *sys.argv[1:]], environment())
+
