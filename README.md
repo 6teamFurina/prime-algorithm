@@ -45,7 +45,7 @@ python3 scripts/bootstrap.py --cache
 python3 scripts/verify.py
 ```
 
-Authentication is required while this repository is private. Bootstrap installs
+The repository is publicly accessible. Bootstrap installs
 Lean **4.33.1** into this checkout, fetches every source at the revisions in
 [dependencies.lock.json](dependencies.lock.json), assembles the upstream engine,
 and registers all three independent specifications and their proofs. `--cache`
@@ -116,6 +116,6 @@ cd paper
 latexmk -pdf -interaction=nonstopmode -halt-on-error primes-note.tex
 ```
 
-`v0.1-verified` identifies this private source release. The PDF is an announcement;
+`v0.1-verified` identifies the verified proof-source snapshot. The PDF is an announcement;
 it does not claim to be the completed full-length paper.
 

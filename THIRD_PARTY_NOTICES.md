@@ -19,5 +19,5 @@ nanoda is supplied by the pinned official Lean 4.35.0 distribution and is used
 as a second kernel for the Lean 4.33.1 proof export.
 
 No new open-source license is granted for the project's original material by
-this private release. Third-party licenses remain applicable to their material.
+this release. Third-party licenses remain applicable to their material.
 
