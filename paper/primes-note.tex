@@ -15,9 +15,8 @@
 \newcommand{\lean}[1]{\texttt{#1}}
 \DeclareMathOperator{\re}{Re}
 
-\title[Prime sums, prime counting and prime finding in time $N^{o(1)}$]%
-{Exact prime sums, exact prime counting and deterministic prime finding
-in time $N^{o(1)}$, relative to the new counting engines}
+\title[Prime counting and prime finding in time $N^{o(1)}$]%
+{Exact prime counting and deterministic prime finding in time $N^{o(1)}$}
 
 \author{Jiayan Ni}
 \address{Cornell University, Ithaca, NY 14853, United States}
@@ -27,21 +26,28 @@ in time $N^{o(1)}$, relative to the new counting engines}
 \begin{document}
 
 \begin{abstract}
-We announce three machine-checked theorems.  There are deterministic Turing
-machines that, on input $N$ in binary, output (i)~the exact sum
-$S(N)=\sum_{p\le N}p$ of the primes up to $N$, (ii)~the exact prime count
-$\pi(N)$, and (iii)~for $N\ge1$ a prime $p$ with $N<p\le 2N$, each within
+We announce that the exact sum $S(N)=\sum_{p\le N}p$ of the primes up to
+$N$, the exact prime count $\pi(N)$ and, for $N\ge1$, a prime in $(N,2N]$
+can each be computed by a deterministic Turing machine in
 $2^{O(b/\sqrt{\log b})}=N^{o(1)}$ steps, where $b$ is the bit length of $N$.
-The best previous bounds for all three problems were of the form
-$N^{1/2+o(1)}$.  The proofs are reductions to the subexponential counting
-algorithm behind the recent refutation of the Exponential Time Hypothesis:
-they are not classical algorithms, they are purely asymptotic, and they stand
-or fall with that result.  The new ingredient is an analytic one: Ramanujan
-sums express the M\"obius function without factoring, and a Cauchy-kernel
-quadrature turns the phases, the logarithm and its reciprocal into short
-linear combinations of rational functions that a counting network of linear
-size can evaluate.  All three statements are formalized in Lean~4 against a
-specification file that imports only Mathlib.
+For all three problems the best bounds known so far were $N^{1/2+o(1)}$;
+for $\pi(N)$ this exponent has stood since the analytic method of Lagarias
+and Odlyzko in 1987.  In particular, whether a given interval in $[N,2N]$
+contains a prime can be decided in time $N^{o(1)}$.  This establishes, in a
+much stronger form, a conjecture of the Polymath4 project, which asked for
+time $N^{1/2-c}$ for some $c>0$ and for intervals of length at most
+$N^{1/2+c}$.  To our knowledge
+these are the first bounds of the form $N^{o(1)}$ for any of the three
+problems.  The theorems are obtained by reducing the three problems to the
+subexponential counting algorithm behind the recent refutation of the
+Exponential Time Hypothesis; they are asymptotic statements, not practical
+algorithms.  The reduction rests on an analytic idea: Ramanujan sums express
+the M\"obius function without factoring, and a Cauchy-kernel quadrature
+turns the phases, the logarithm and its reciprocal into short linear
+combinations of rational functions, which a counting network of linear size
+can evaluate.  All three theorems, together with the counting algorithm they
+rely on, are formally verified in Lean~4 against a specification that
+imports only Mathlib.
 \end{abstract}
 
 \maketitle
@@ -87,9 +93,19 @@ time $N^{1/2+o(1)}$, and the elementary method of Hirsch, Kessler and
 Mendlovic \cite{HKM} gives $\widetilde O(\sqrt N)$ for both $\pi(N)$ and
 $S(N)$; the combinatorial methods \cite{LMO,DR} run in time about $N^{2/3}$.
 For deterministically finding a prime larger than $N$ the best known bound is
-also $N^{1/2+o(1)}$, and improving it was the goal of the Polymath4 project
-\cite{TCH}.  We know of no earlier bound of the form $N^{o(1)}$ for any of
-the three problems, conditional or not.
+also $N^{1/2+o(1)}$, due to Odlyzko \cite{TCH}.  The Polymath4 project
+posed the problem in a strong form, to find deterministically a prime of at
+least $k$ digits in time polynomial in $k$, and in a weak form, in time
+$\exp(o(k))$ \cite{P4}.  Applied to $N=10^{k-1}$, Theorem~\ref{thm:find}
+outputs a prime of $k$ digits in time $2^{O(k/\sqrt{\log k})}$, so it settles
+the weak form; the strong form remains open.  The paper of the project
+\cite[Conjecture~1.1]{TCH} conjectured that for some $c>0$ one can decide in
+time $O(N^{1/2-c+o(1)})$ whether an interval $[a,b]\subseteq[N,2N]$ of length
+at most $N^{1/2+c}$ contains a prime, and observed that this would give
+prime finding in the same time.  Since $[a,b]$ contains a prime if and only
+if $S(a-1)<S(b)$, two evaluations of Theorem~\ref{thm:sum} decide this in
+time $N^{o(1)}$ for every interval in $[N,2N]$, with no restriction on its
+length.
 
 In October 2026 two deterministic algorithms for \#3-SAT in time $2^{o(n)}$
 were announced, with Lean formalizations \cite{O,A}; we use the one of
@@ -100,19 +116,18 @@ present note, Tulsyan's computation of the \emph{parity} of $\pi(N)$ in time
 $N^{o(1)}$ \cite{T1}.  The notes accompanying \cite{T1} record exact
 $\pi(N)$ and deterministic prime finding as out of reach of that approach
 without a further, analytic component (see also \cite{T2}).
-Theorems~\ref{thm:sum}--\ref{thm:find} supply such a component.  We searched
-the Hexagon server, arXiv and the public repositories of \cite{A,T1} on
-November~15, 2026 and found no overlapping claim.
+Theorems~\ref{thm:sum}--\ref{thm:find} supply such a component. 
 
 \subsection*{What kind of result this is}
-The theorems are consequences of the counting algorithm of \cite{A}.  They
-contain no unproved hypothesis in the formal sense: the Lean development of
-\cite{A} is imported and checked together with ours.  But the speed comes
-entirely from that algorithm, and if it were withdrawn the results would go
-with it.  The constant $C$ is not extracted.  The constants that arise in
-the proof are very large (the reduction alone introduces a network constant
-$2^{22}\cdot132$ and a padding factor $2049$), and we make no claim about
-any feasible range of $N$.  Nothing here is a practical algorithm.
+Theorems~\ref{thm:sum}--\ref{thm:find} are reductions.  They transform prime
+summation, prime counting and prime finding into counting problems of the
+kind solved by the algorithm of \cite{A}; we do not propose a new counting
+engine, and the running time is the one that algorithm provides.  The
+results are purely asymptotic and of theoretical interest only.  The
+constants are very large (the reduction alone introduces a network constant
+$2^{22}\cdot132$ and a padding factor $2049$), so the bound $T_C(N)$ falls
+below the classical $N^{1/2}$ only for very large $N$; we do not extract $C$
+and give no estimate of that range.
 
 \section{The engine}
 
@@ -309,10 +324,9 @@ error budget, of the counting bijection for the network and of the bit
 bounds, following the formal development.
 \end{remark}
 
-\subsection*{Release preparation}
-AI tools assisted with preparing the repository and its reproduction scripts.
-The mathematical verification described above is based on the recorded
-checker executions.
+\subsection*{AI assistance}
+Generative AI tools were used extensively in this work, including the assist of GPT 6 Astra in developing the algorithmic constructions connecting the upstream technical engine to the prime-sum, prime-counting, and prime-finding results. 
+GPT 6 Astra and Claude Fable 5.2 also played the main role in the full formalization in Lean 4.
 
 \begin{thebibliography}{99}
 
@@ -341,6 +355,11 @@ J. Algorithms \textbf{8} (1987), 173--191.
 \emph{The Exponential Time Hypothesis is false}, preprint (October 2026),
 \url{https://github.com/openai/math}.
 
+\bibitem{P4} T.~Tao,
+\emph{(Research thread II) Deterministic way to find primes},
+The polymath blog, August 9, 2009,
+\url{https://polymathprojects.org/2009/08/09/research-thread-ii-deterministic-way-to-find-primes/}.
+
 \bibitem{R} S.~Ramanujan,
 \emph{On certain trigonometrical sums and their applications in the theory
 of numbers}, Trans. Cambridge Philos. Soc. \textbf{22} (1918), 259--276.
@@ -351,7 +370,8 @@ Hexagon 2610.00600 (2026).
 
 \bibitem{TCH} T.~Tao, E.~Croot III and H.~Helfgott,
 \emph{Deterministic methods to find primes},
-Math. Comp. \textbf{81} (2012), 1233--1246.
+Math. Comp. \textbf{81} (2012), 1233--1246; arXiv:1009.3956, as
+D.~H.~J.~Polymath.
 
 \bibitem{TW} L.~N.~Trefethen and J.~A.~C.~Weideman,
 \emph{The exponentially convergent trapezoidal rule},
